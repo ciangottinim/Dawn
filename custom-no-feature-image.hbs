@@ -3,7 +3,7 @@
 <div class="content-area">
     <main class="site-main">
         {{#post}}
-            {{> content no_image=true}}
+            {{> content-page no_image=true}}
         {{/post}}
         {{#is "post"}}
             {{> related}}
@@ -11,3 +11,5 @@
         {{/is}}
     </main>
 </div>
+
+{{!< default}}
