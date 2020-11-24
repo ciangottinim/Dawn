@@ -1,8 +1,8 @@
-{{#get "posts" limit="10" filter="tags:[{{post.tags}}]+id:-{{post.id}}" as |related|}}
+{{#get "posts" limit="100" filter="tags:[{{post.tags}}]+id:-{{post.id}}" as |related|}}
     {{#if related}}
         <section class="related-wrapper">
             <div class="container small">
-                <h3 class="related-title">Linux Latest 10 Posts</h3>
+                <h3 class="related-title">Latest Posts</h3>
                 <div class="related-feed">
                     {{#foreach posts visibility="all"}}
                         {{> "loop"}}
